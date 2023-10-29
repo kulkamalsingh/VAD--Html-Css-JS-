@@ -10,7 +10,15 @@ h2{
 p{
 	color:yellow;
 }
-/*body{
-	background-image: url("images\1.jpg");
-	background-color: #cccccc;
-}*/
+body{
+	background-color:powderblue;
+}
+.a{
+text-align: left;
+background-color: blue;
+}
+
+.b{
+	text-align: justify;
+	background: blue;
+}
