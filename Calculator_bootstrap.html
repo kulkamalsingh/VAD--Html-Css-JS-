@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Asif Tyagi ---calculator</title>
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- bootstrap online css-->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+          <!--------styleshteet.css-------->
+     <link rel="stylesheet" href="css/stylesheet.css">
+</head>
+<body>
+	
+
+	<!------------------start coding for calculator------------------>
+
+	 <div class="calculator card">
+     <span class="blinking"><marquee behavior="alternate">Calculator</marquee></span>
+    <input type="text" class="calculator-screen z-depth-1" id="digit" value="" placeholder="0">
+
+    <!-------calculator keys----------->
+
+    <div class="calculator-keys">
+      <button type="button"  class="btn btn-light waves-effect" value="+" onclick="dis('+')" style="background: #34ebd2">+</button>
+      <button type="button"  class="btn btn-light waves-effect" value="-" onclick="dis('-')" style="background: #34ebd2">-</button>
+      <button type="button"  class="btn btn-light waves-effect" value="" onclick="dis('*')"style="background: #34ebd2">*</button>
+      <button type="button"  class="btn btn-light waves-effect" value="/" onclick="dis('/')" style="background: #34ebd2">/</button>
+
+
+      <button type="button"  class="btn btn-light waves-effect" value="7" onclick="dis('7')"style="background: #29bfd9">7</button>
+      <button type="button"  class="btn btn-light waves-effect" value="8" onclick="dis('8')" style="background: #29bfd9">8</button>
+      <button type="button"  class="btn btn-light waves-effect" value="9" onclick="dis('9')"style="background: #29bfd9">9</button>
+
+
+      <button type="button"  class="btn btn-light waves-effect" value="4" onclick="dis('4')" style="background: #29bfd9">4</button>
+      <button type="button"  class="btn btn-light waves-effect" value="5" onclick="dis('5')"style="background: #29bfd9">5</button>
+      <button type="button"  class="btn btn-light waves-effect" value="6" onclick="dis('6')"style="background: #29bfd9">6</button>
+
+
+      <button type="button"  class="btn btn-light waves-effect" value="1" onclick="dis('1')"style="background: #29bfd9">1</button>
+      <button type="button"  class="btn btn-light waves-effect" value="2" onclick="dis('2')"style="background: #29bfd9">2</button>
+      <button type="button"  class="btn btn-light waves-effect" value="3" onclick="dis('3')"style="background: #29bfd9">3</button>
+
+
+      <button type="button" value="0" class="btn btn-light waves-effect" value="0"     onclick="dis('0')"style="background: #29bfd9">0</button>
+
+      <button type="button" class="decimal function btn btn-secondary" value="."     onclick="dis('.')"style="background: #a6c">.</button>
+
+      <button type="button" class="all-clear function btn btn-danger btn-sm"        value="AC" onclick="clr()" style="background: #ff3547">AC</button>
+
+      <button type="button" class="equal-sign operator btn btn-default" onclick="result()" value="=" style="background:#fc7c0f">=</button>
+
+    </div> <!---------calculator-keys--------->
+  </div>   <!-----------calculator card------->
+
+
+
+<!--------------java script  start------------>
+
+<script>
+//function for displaying values------
+function dis(val)
+{
+document.getElementById("digit").value+=val
+ }
+//function for   result----
+function result()
+{
+var x = document.getElementById("digit").value
+var y = eval(x) // function in javascript arithmetic operation
+document.getElementById("digit").value = y
+}
+//function for  display clear
+function clr()
+{
+document.getElementById("digit").value =""
+}
+</script>
+ <!------javascript end------------->
+
+
+</body>
+</html>
